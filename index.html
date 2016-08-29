@@ -10,6 +10,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
+<form>
+   <input type="text" id="number" value="0"/>
+   <input type="button" onclick="incrementValue()" value="Like" />
+</form>
     <section class="page-header">
       <h1 class="project-name">Vishal Jagtap</h1>
       <h2 class="project-tagline">Mysite</h2>
