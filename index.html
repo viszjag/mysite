@@ -10,17 +10,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    function incrementValue()
-{
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
-<form>
-   <input type="text" id="number" value="0"/>
-   <input type="button" onclick="incrementValue()" value="Like" />
-</form>
+    <label id="display"></label>
+    <script type="text/javascript">
+
+    var i = 0;
+  function incNumber() {
+       i++;
+        document.getElementById("display").innerHTML = i;
+    }
+     </script>
     <section class="page-header">
       <h1 class="project-name">Vishal Jagtap</h1>
       <h2 class="project-tagline">Mysite</h2>
@@ -28,6 +26,8 @@
       <a href="https://github.com/viszjag/mysite/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/viszjag/mysite/tarball/master" class="btn">Download .tar.gz</a>
     </section>
+    
+     <input type="button" value="Like" id="inc" onclick="incNumber()"/>
 
     <section class="main-content">
       <h3>
